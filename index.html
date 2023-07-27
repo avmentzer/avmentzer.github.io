@@ -15,7 +15,7 @@
         rel="stylesheet">
 </head>
 
-<body class="container mx-auto mt-10 font-sans bg-gradient-to-r from-white to-blue-200">
+<body class="container mx-auto mt-20 font-sans bg-gradient-to-r from-white to-blue-200">
     <header id=" headerContainer">
         <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat h-[100vh]">
             <div>
@@ -25,7 +25,7 @@
                 <img width="240" height="240" src="media/men.webp" alt="headshot" class="rounded-full border mb-2">
             </div>
             <h1 class="text-4xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
-            <h2 class="text-2xl text-[#0a66c2] hover:font-code">I'm a Coder</h2>
+            <h2 class="text-2xl text-[#0a66c2] hover:font-code">I'm a Coder.</h2>
             <p class="max-w-[360px] h-[100px] font-roboto text-lg" id="headline"></p>
             <a href="https://www.linkedin.com/in/avmentzer/" target="_blank"><img width="72" height="72"
                     src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl mt-4"></a>
@@ -34,16 +34,41 @@
         </div>
     </header>
     <main class>
-        <div class="mainOuterContainer" id="skillsProjects">
+        <div class="mainOuterContainer font-roboto" id="skillsProjects">
             <div class="bg-blue-200 w-44 h-14 mx-auto flex place-content-center rounded-2xl">
                 <button class="bg-blue-400 rounded-md w-18 h-10 m-2 p-2 transition duration-500 ease-in-out"
                     id="projectButton">Projects</button>
                 <button class="rounded-md w-18 h-10 m-2 p-2 transition duration-300 ease-in-out"
                     id="skillButton">Skills</button>
             </div>
+            <section id="projects" class="">
+                <div class="projectsOuterContainer mt-4 flex flex-wrap justify-center gap-8 font-roboto">
+                    <div class="flex flex-col text-center bg-white w-[250px] group" id="card1">
+                        <button
+                            class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block">LINK</button>
+                        <img width="250" height="125" src="media/calculator.jpg" alt="calculator Project"
+                            class="rounded-sm group-hover:bg-black">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
+                    </div>
+                    <div class="flex flex-col text-center bg-white w-[250px] group" id="card2">
+                        <button
+                            class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block">LINK</button>
+                        <img width="250" height="125" src="media/calculator.jpg" alt="calculator Project"
+                            class="rounded-sm group-hover:bg-black">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
+                    </div>
+            </section>
+            <section id="skills" class="hidden">
+                <div class="skillsOuterContainer bg-green-500 text-center mt-4">
+                    <div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est sunt eos labore possimus
+                            sint
+                            dolore necessitatibus temporibus unde rem?</div>
+                        <div>lorem20</div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <section id="projects"></section>
-        <section id="skills"></section>
     </main>
     <footer class="text-center mt-20">
         Copyright

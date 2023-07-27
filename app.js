@@ -33,9 +33,12 @@ toggleButton.addEventListener('click', () => {
     }
 })
 
-/// Projects/Skills Toggle///
+/// Projects/Skills ///
+
+// Toggle Button //
 
 const buttons = document.querySelectorAll('.mainOuterContainer button')
+const sections = document.querySelectorAll('.mainOuterContainer section')
 
 buttons.forEach((button) => {
     const toggleProjectsSkills = () => {
@@ -45,10 +48,18 @@ buttons.forEach((button) => {
         buttons.forEach((btn) => {
             if (btn !== button) {
                 btn.classList.remove('bg-blue-400');
+                sections.forEach((section) => {
+                    if (section.classList.contains('hidden')) {
+                        section.classList.remove('hidden')
+                    } else {
+                        section.classList.toggle('hidden')
+                    }
+                })
             }
         });
         button.classList.toggle('bg-blue-400');
     };
-
     button.addEventListener('click', toggleProjectsSkills);
 });
+
+// Content //
