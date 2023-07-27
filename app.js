@@ -48,11 +48,12 @@ buttons.forEach((button) => {
         buttons.forEach((btn) => {
             if (btn !== button) {
                 btn.classList.remove('bg-blue-400');
+            } else {
                 sections.forEach((section) => {
                     if (section.classList.contains('hidden')) {
                         section.classList.remove('hidden')
                     } else {
-                        section.classList.toggle('hidden')
+                        section.classList.add('hidden')
                     }
                 })
             }
