@@ -17,30 +17,35 @@
 
 <body class="container mx-auto mt-10 font-sans bg-gradient-to-r from-white to-blue-200">
     <header id=" headerContainer">
-        <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat">
-            <div class="">
+        <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat h-[100vh]">
+            <div>
                 <img src="media/dark.png" width="32" height="32"
-                    class="absolute ml-[250px] bg-transparent md:ml-[450px]" id="toggleDarkMode">
-                </p>
+                    class="cursor-pointer absolute ml-[250px] bg-transparent md:ml-[450px] hover:cursor-pointer"
+                    id="toggleDarkMode">
                 <img width="240" height="240" src="media/men.webp" alt="headshot" class="rounded-full border mb-2">
             </div>
-
-            <h1 class="text-4xl text-slate-700">Alexander von Mentzer</h1>
+            <h1 class="text-4xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
             <h2 class="text-2xl text-[#0a66c2] hover:font-code">I'm a Coder</h2>
             <p class="max-w-[360px] h-[100px] font-roboto text-lg" id="headline"></p>
             <a href="https://www.linkedin.com/in/avmentzer/" target="_blank"><img width="72" height="72"
-                    src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl"></a>
+                    src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl mt-4"></a>
+            <a href="#skillsProjects"><img src="media/mouse-cursor.png" alt="scroll down" width="48" height="48"
+                    class="animate-bounce mt-4"></a>
         </div>
     </header>
     <main class>
-        <div class="text-center">
-            <button>Projects</button>
-            <button>Skills</button>
+        <div class="mainOuterContainer" id="skillsProjects">
+            <div class="bg-blue-200 w-44 h-14 mx-auto flex place-content-center rounded-2xl">
+                <button class="bg-blue-400 rounded-md w-18 h-10 m-2 p-2 transition duration-500 ease-in-out"
+                    id="projectButton">Projects</button>
+                <button class="rounded-md w-18 h-10 m-2 p-2 transition duration-300 ease-in-out"
+                    id="skillButton">Skills</button>
+            </div>
         </div>
         <section id="projects"></section>
         <section id="skills"></section>
     </main>
-    <footer class="text-center">
+    <footer class="text-center mt-20">
         Copyright
     </footer>
 </body>

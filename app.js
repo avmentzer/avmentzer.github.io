@@ -1,4 +1,5 @@
 /// Typing animation fo headline ///
+
 document.addEventListener('DOMContentLoaded', () => {
     const text = '`Passionate software developer. System admin at heart. WIFI Vienna graduate. Versatile programmer. Team player. Eager learner. IT enthusiast.`'
     const characters = text.split("")
@@ -13,17 +14,41 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 ///DarkMode ///
+
 const toggleButton = document.getElementById('toggleDarkMode')
 const body = document.querySelector('body')
+const fullName = document.getElementById('fullName')
 
 toggleButton.addEventListener('click', () => {
     const brightMode = 'container mx-auto mt-10 font-sans bg-gradient-to-r from-white to-blue-200'
-    const darkMode = 'container mx-auto mt-10 font-sans bg-slate-900 text-white dark'
+    const darkMode = 'container mx-auto mt-10 font-sans bg-slate-900 text-slate-100 dark'
     if (body.classList.contains('dark')) {
         body.classList = brightMode
+        fullName.classList.add('text-slate-700')
         toggleButton.setAttribute('src', 'media/dark.png')
     } else {
         body.classList = darkMode
+        fullName.classList.remove('text-slate-700')
         toggleButton.setAttribute('src', 'media/bright.svg')
     }
 })
+
+/// Projects/Skills Toggle///
+
+const buttons = document.querySelectorAll('.mainOuterContainer button')
+
+buttons.forEach((button) => {
+    const toggleProjectsSkills = () => {
+        if (button.classList.contains('bg-blue-400')) {
+            return
+        }
+        buttons.forEach((btn) => {
+            if (btn !== button) {
+                btn.classList.remove('bg-blue-400');
+            }
+        });
+        button.classList.toggle('bg-blue-400');
+    };
+
+    button.addEventListener('click', toggleProjectsSkills);
+});
