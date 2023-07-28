@@ -15,64 +15,54 @@
         rel="stylesheet">
 </head>
 
-<body class="container mx-auto mt-20 font-sans bg-gradient-to-r from-white to-blue-200">
+<body class="container mx-auto md:mt-10 mt-5 font-sans bg-gradient-to-r from-white to-blue-200">
+    <!-- Hero Section -->
     <header id="headerContainer">
-        <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat h-[100vh]">
+        <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat  md:h-[100vh]">
             <div>
-                <img src="media/dark.png" width="32" height="32"
+                <img src=" media/dark.png" width="32" height="32"
                     class="cursor-pointer absolute ml-[250px] bg-transparent md:ml-[450px] hover:cursor-pointer"
                     id="toggleDarkMode">
                 <img width="240" height="240" src="media/men.webp" alt="headshot" class="rounded-full border mb-2">
             </div>
             <h1 class="text-4xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
             <h2 class="text-2xl text-[#0a66c2] hover:font-code">I'm a Coder.</h2>
-            <p class="max-w-[360px] h-[100px] font-roboto text-lg" id="headline"></p>
+            <p class="w-[360px] h-32 font-roboto text-lg" id="headline"></p>
             <a href="https://www.linkedin.com/in/avmentzer/" target="_blank"><img width="72" height="72"
-                    src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl mt-4"></a>
-            <a href="#skillsProjects"><img src="media/mouse-cursor.png" alt="scroll down" width="48" height="48"
-                    class="animate-bounce mt-4"></a>
+                    src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl mb-1 md:mb-0"></a>
+            <!-- <a href="#skillsProjects"><img src="media/mouse-cursor.png" alt="scroll down" width="48" height="48"
+                    class="animate-bounce mt-4"></a> -->
         </div>
     </header>
+    <!-- Projects/Skills Section -->
     <main>
         <div class="mainOuterContainer font-roboto" id="skillsProjects">
-            <div class="bg-blue-200 w-44 h-14 mx-auto flex place-content-center rounded-2xl">
+            <div class="bg-blue-200 w-44 h-14 mx-auto flex place-content-center rounded-2xl mb-12">
                 <button class="bg-blue-400 rounded-md w-18 h-10 m-2 p-2 transition duration-500 ease-in-out"
                     id="projectButton">Projects</button>
                 <button class="rounded-md w-18 h-10 m-2 p-2 transition duration-300 ease-in-out"
                     id="skillButton">Skills</button>
             </div>
+            <!-- Section Projects -->
             <section id="projects">
                 <div class="projectsOuterContainer mt-4 flex flex-wrap justify-center gap-8 font-roboto">
-                    <div class="flex flex-col text-center bg-white w-[250px] group">
-                        <button class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block"
-                            id="link1">LINK1</button>
-                        <img width="250" height="125" src="media/calculator.jpg" alt="calculator Project1"
-                            class="rounded-sm group-hover:bg-black">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
-                    </div>
-                    <div class="flex flex-col text-center bg-white w-[250px] group">
-                        <button class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block"
-                            id="link2">LINK2</button>
-                        <img width="250" height="125" src="media/calculator.jpg" alt="calculator Project2"
-                            class="rounded-sm group-hover:bg-black">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
-                    </div>
-                    <div class="flex flex-col text-center bg-white w-[250px] group">
-                        <button class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block"
-                            id="link3">LINK3</button>
-                        <img width="250" height="125" src="media/calculator.jpg" alt="calculator Project3"
-                            class="rounded-sm group-hover:bg-black">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
-                    </div>
-                    <div class="flex flex-col text-center bg-white w-[250px] group">
-                        <button class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block"
-                            id="link4">LINK4</button>
-                        <img width="250" height="125" src="media/calculator.jpg" alt="calculator Project4"
-                            class="rounded-sm group-hover:bg-black">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
+                    <div class="relative flex flex-col text-center bg-white group rounded-lg">
+                        <h2 class="absolute ml-8 mt-5 md:mt-12 hidden group-hover:block text-white font-roboto text-xl">
+                            Project
+                            1
+                        </h2>
+                        <a href="" class="absolute ml-8 mt-28 md:mt-44 hidden group-hover:block z-10"><img
+                                src="media/link.png" alt="link" class=" w-12 h-12 rounded-sm brightness-95"></a>
+                        <img src="media/calculator.jpg" alt="Project1"
+                            class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
+                        </div>
+
                     </div>
                 </div>
             </section>
+            <!-- Section Skills -->
             <section id="skills" class="hidden">
                 <div class="skillsOuterContainer mt-4 flex flex-wrap justify-center gap-8 font-roboto">
                     <div class="flex flex-col text-center bg-white w-[250px] group">
