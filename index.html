@@ -15,21 +15,21 @@
         rel="stylesheet">
 </head>
 
-<body class="container mx-auto md:mt-32 mt-10 font-sans bg-gradient-to-r from-white to-blue-200">
+<body class="container mx-auto mt-10 font-sans bg-gradient-to-r from-white to-blue-200 md:mt-36">
     <!-- Hero Section -->
     <header id="headerContainer">
-        <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat md:h-[100vh]">
+        <div class="flex flex-col text-center items-center gap-4 mb-10 font-montserrat md:h-[100vh]">
             <div>
                 <img src=" media/dark.png" width="32" height="32"
                     class="cursor-pointer absolute ml-[250px] bg-transparent md:ml-[450px] hover:cursor-pointer"
                     id="toggleDarkMode">
                 <img width="240" height="240" src="media/men.webp" alt="headshot" class="rounded-full border mb-2">
             </div>
-            <h1 class="text-4xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
+            <h1 class="text-3xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
             <h2 class="text-2xl text-[#0a66c2] hover:font-code">I'm a coder.</h2>
-            <p class="w-[360px] h-32 font-roboto text-lg" id="headline"></p>
+            <p class="w-[360px] h-28 font-roboto text-lg" id="headline"></p>
             <a href="https://www.linkedin.com/in/avmentzer/" target="_blank"><img width="72" height="72"
-                    src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl mb-1 md:mb-0"></a>
+                    src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="md:mb-0 hover:drop-shadow-xl "></a>
             <a href="#main"><img src="media/down-arrow.png" alt="scroll down" width="48" height="48"
                     class="animate-bounce mt-4 hidden md:block"></a>
         </div>
@@ -223,7 +223,7 @@
 
         </div>
     </main>
-    <footer class="text-center mb-2 font-montserrat">
+    <footer class="mb-2 font-montserrat">
         <!-- Contact Form -->
         <div class="flex justify-center mb-10">
             <img src="media/email.png" alt="emailMe" class="contact hover:animate-pulse cursor-pointer">
@@ -237,6 +237,7 @@
                         <label for="message">Your message</label>
                         <textarea name="message" maxlength="1000" minlength="1" class="bg-blue-100 h-40"
                             required></textarea>
+                        <input type="hidden" name="_next" value="http://localhost:5500/email.html">
                         <div class="flex justify-between mt-4">
                             <button type="submit" class="bg-green-200 rounded-xl w-20">Send</button>
                             <button type="button" class="closeDialogButton bg-red-200 rounded-xl w-20">Close</button>
@@ -245,7 +246,7 @@
                 </form>
             </dialog>
         </div>
-        <p>&copy Alexander von Mentzer</p>
+        <p class="text-center">&copy Alexander von Mentzer</p>
     </footer>
 </body>
 <script src="app.js"></script>
