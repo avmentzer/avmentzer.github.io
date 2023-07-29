@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const span = document.createElement('span')
             span.textContent = character
             headline.appendChild(span)
-        }, i * 60);
+        }, i * 80);
     })
 })
 
@@ -75,4 +75,5 @@ contactDiv.addEventListener('click', () => {
 
 closeDialogButton.addEventListener('click', () => {
     contactDialog.close()
+    window.document.reload()
 })
