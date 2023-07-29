@@ -75,5 +75,4 @@ contactDiv.addEventListener('click', () => {
 
 closeDialogButton.addEventListener('click', () => {
     contactDialog.close()
-    window.document.reload()
 })
