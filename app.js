@@ -63,4 +63,16 @@ buttons.forEach((button) => {
     button.addEventListener('click', toggleProjectsSkills);
 });
 
-// Content //
+// Contact Form //
+
+const contactDiv = document.querySelector('.contact')
+const contactDialog = document.querySelector('.contactDialog')
+const closeDialogButton = document.querySelector('.closeDialogButton')
+
+contactDiv.addEventListener('click', () => {
+    contactDialog.showModal()
+})
+
+closeDialogButton.addEventListener('click', () => {
+    contactDialog.close()
+})

@@ -216,9 +216,30 @@
                         </div>
                     </div>
             </section>
+            <div class="flex justify-center">
+                <img src="media/email.png" alt="emailMe" class="contact hover:animate-pulse cursor-pointer">
+                <dialog class="contactDialog w-[400px]">
+                    <form action="https://formsubmit.co/alexander@von-mentzer.eu" method="POST">
+                        <div class="flex flex-col font-roboto gap-1">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="bg-blue-100 h-8" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="bg-blue-100 h-8" required>
+                            <label for="message">Your message</label>
+                            <textarea name="message" maxlength="1000" minlength="1" class="bg-blue-100 h-40"
+                                required></textarea>
+                            <div class="flex justify-between mt-4">
+                                <button type="submit" class="bg-green-200 rounded-xl w-20">Send</button>
+                                <button type="button"
+                                    class="closeDialogButton bg-red-200 rounded-xl w-20">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
         </div>
     </main>
-    <footer class="text-center mt-20 mb-2 font-montserrat">
+    <footer class="text-center mt-10 mb-2 font-montserrat">
         &copy Alexander von Mentzer
     </footer>
 </body>
