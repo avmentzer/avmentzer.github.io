@@ -566,10 +566,6 @@ video {
   z-index: 10;
 }
 
-.z-\[2000000\] {
-  z-index: 2000000;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -695,36 +691,12 @@ video {
   animation: bounce 1s infinite;
 }
 
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin {
-  animation: spin 1s linear infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -755,24 +727,12 @@ video {
   gap: 2rem;
 }
 
-.gap-36 {
-  gap: 9rem;
-}
-
-.gap-12 {
-  gap: 3rem;
+.gap-48 {
+  gap: 12rem;
 }
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-52 {
-  gap: 13rem;
-}
-
-.gap-48 {
-  gap: 12rem;
 }
 
 .rounded-full {
@@ -953,6 +913,16 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#0071fb, white)
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1013,10 +983,6 @@ video {
 
   .md\:w-\[512px\] {
     width: 512px;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:gap-12 {
