@@ -803,6 +803,18 @@ video {
   gap: 3rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-36 {
+  gap: 9rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
