@@ -30,7 +30,7 @@
             <p class="w-[360px] h-32 font-roboto text-lg" id="headline"></p>
             <a href="https://www.linkedin.com/in/avmentzer/" target="_blank"><img width="72" height="72"
                     src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl mb-1 md:mb-0"></a>
-            <a href="#skillsProjects"><img src="media/mouse-cursor.png" alt="scroll down" width="48" height="48"
+            <a href="#skillsProjects"><img src="media/down-arrow.png" alt="scroll down" width="48" height="48"
                     class="animate-bounce mt-4 hidden md:block"></a>
         </div>
     </header>
@@ -103,11 +103,11 @@
             </section>
             <!-- Section Skills -->
             <section id="skills" class="hidden">
-                <div class="skillsOuterContainer mt-4 flex justify-center gap-36">
+                <div class="skillsOuterContainer mt-4 md:flex justify-center gap-48">
                     <!-- Frontend Skills -->
-                    <div class="frontendSkills flex flex-col gap-4">
-                        <h1 class="font-montserrat mb-4 text-xl  text-center">Frontend Developer</h1>
-                        <div class="grid grid-cols-2 gap-12">
+                    <div class="frontendSkills flex flex-col items-center gap-4 mb-8">
+                        <h1 class="font-montserrat mb-4 text-xl text-center">Frontend Developer</h1>
+                        <div class="grid grid-cols-2 gap-4 md:gap-12">
                             <div class="skillElement font-roboto">
                                 <div class="flex gap-2">
                                     <img src="media/check.png" alt="skillImage" class="w-8 h-8">
@@ -165,9 +165,9 @@
                         </div>
                     </div>
                     <!-- Backend Skills -->
-                    <div class="backendSkills flex flex-col gap-4">
-                        <h1 class="font-montserrat mb-4 text-xl  text-center">Backend Developer</h1>
-                        <div class="grid grid-cols-2 gap-12">
+                    <div class="backendSkills flex flex-col items-center gap-4 mb-8">
+                        <h1 class="font-montserrat mb-4 text-xl text-center">Backend Developer</h1>
+                        <div class="grid grid-cols-2 gap-4 md:gap-12">
                             <div class="skillElement font-roboto">
                                 <div class="flex gap-2">
                                     <img src="media/check.png" alt="skillImage" class="w-8 h-8">
@@ -208,16 +208,18 @@
                                 <div class="flex gap-2">
                                     <img src="media/check.png" alt="skillImage" class="w-8 h-8">
                                     <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">BaaS (Supabase, Atlas)</h2>
+                                        <h2 class="font-bold">BaaS</h2>
                                         <p>Intermediate</p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
             </section>
         </div>
     </main>
-    <footer class="text-center mt-20 mb-2">
-        Copyright &copy Alexander von Mentzer
+    <footer class="text-center mt-20 mb-2 font-montserrat">
+        &copy Alexander von Mentzer
     </footer>
 </body>
 <script src="app.js"></script>

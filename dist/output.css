@@ -566,12 +566,12 @@ video {
   z-index: 10;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.z-\[2000000\] {
+  z-index: 2000000;
 }
 
-.m-8 {
-  margin: 2rem;
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -599,44 +599,28 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .ml-8 {
   margin-left: 2rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.ml-40 {
-  margin-left: 10rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -663,32 +647,16 @@ video {
   height: 2.5rem;
 }
 
-.h-8 {
-  height: 2rem;
+.h-12 {
+  height: 3rem;
 }
 
 .h-\[156px\] {
   height: 156px;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-6 {
-  height: 1.5rem;
+.h-8 {
+  height: 2rem;
 }
 
 .w-\[360px\] {
@@ -699,32 +667,16 @@ video {
   width: 11rem;
 }
 
-.w-8 {
-  width: 2rem;
+.w-12 {
+  width: 3rem;
 }
 
 .w-\[312px\] {
   width: 312px;
 }
 
-.w-\[250px\] {
-  width: 250px;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-6 {
-  width: 1.5rem;
+.w-8 {
+  width: 2rem;
 }
 
 @keyframes bounce {
@@ -743,12 +695,36 @@ video {
   animation: bounce 1s infinite;
 }
 
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -767,16 +743,8 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .gap-4 {
@@ -787,40 +755,24 @@ video {
   gap: 2rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
+.gap-36 {
+  gap: 9rem;
 }
 
 .gap-12 {
   gap: 3rem;
 }
 
-.gap-14 {
-  gap: 3.5rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
-.gap-32 {
-  gap: 8rem;
+.gap-52 {
+  gap: 13rem;
 }
 
-.gap-36 {
-  gap: 9rem;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.overflow-hidden {
-  overflow: hidden;
+.gap-48 {
+  gap: 12rem;
 }
 
 .rounded-full {
@@ -855,14 +807,6 @@ video {
   border-width: 4px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-solid {
-  border-style: solid;
-}
-
 .border-cyan-500 {
   --tw-border-opacity: 1;
   border-color: rgb(6 182 212 / var(--tw-border-opacity));
@@ -885,11 +829,6 @@ video {
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -924,16 +863,8 @@ video {
   padding: 0.5rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
-}
-
-.align-top {
-  vertical-align: top;
 }
 
 .font-sans {
@@ -1039,20 +970,11 @@ video {
   display: block;
 }
 
-.group:hover .group-hover\:bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .group:hover .group-hover\:opacity-20 {
   opacity: 0.2;
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1077,23 +999,27 @@ video {
     display: block;
   }
 
-  .md\:h-12 {
-    height: 3rem;
-  }
-
-  .md\:h-\[256px\] {
-    height: 256px;
+  .md\:flex {
+    display: flex;
   }
 
   .md\:h-\[100vh\] {
     height: 100vh;
   }
 
-  .md\:w-12 {
-    width: 3rem;
+  .md\:h-\[256px\] {
+    height: 256px;
   }
 
   .md\:w-\[512px\] {
     width: 512px;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
   }
 }
