@@ -18,7 +18,7 @@
 <body class="container mx-auto md:mt-10 mt-5 font-sans bg-gradient-to-r from-white to-blue-200">
     <!-- Hero Section -->
     <header id="headerContainer">
-        <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat  md:h-[100vh]">
+        <div class="flex flex-col text-center items-center gap-4 mb-8 font-montserrat md:h-[100vh]">
             <div>
                 <img src=" media/dark.png" width="32" height="32"
                     class="cursor-pointer absolute ml-[250px] bg-transparent md:ml-[450px] hover:cursor-pointer"
@@ -30,8 +30,8 @@
             <p class="w-[360px] h-32 font-roboto text-lg" id="headline"></p>
             <a href="https://www.linkedin.com/in/avmentzer/" target="_blank"><img width="72" height="72"
                     src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="hover:drop-shadow-xl mb-1 md:mb-0"></a>
-            <!-- <a href="#skillsProjects"><img src="media/mouse-cursor.png" alt="scroll down" width="48" height="48"
-                    class="animate-bounce mt-4"></a> -->
+            <a href="#skillsProjects"><img src="media/mouse-cursor.png" alt="scroll down" width="48" height="48"
+                    class="animate-bounce mt-4 hidden md:block"></a>
         </div>
     </header>
     <!-- Projects/Skills Section -->
@@ -46,7 +46,7 @@
             <!-- Section Projects -->
             <section id="projects">
                 <div class="projectsOuterContainer mt-4 flex flex-wrap justify-center gap-8 font-roboto">
-                    <div class="projectCard relative flex flex-col text-center bg-white group rounded-lg">
+                    <div class="projectCard relative flex flex-col text-center group rounded-lg">
                         <h2 class="absolute ml-8 mt-5 md:mt-12 hidden group-hover:block text-white font-roboto text-xl">
                             Project
                             1
@@ -59,41 +59,41 @@
                             class="overlay absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="projectCard relative flex flex-col text-center bg-white group rounded-lg">
+                    <div class="projectCard relative flex flex-col text-center  group rounded-lg">
                         <h2 class="absolute ml-8 mt-5 md:mt-12 hidden group-hover:block text-white font-roboto text-xl">
                             Project
                             2
                         </h2>
                         <a href="" class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10"><img
                                 src="media/link.png" alt="link" class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/calculator.jpg" alt="Project1"
+                        <img src="media/calculator.jpg" alt="Project2"
                             class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]">
                         <div
                             class="overlay absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="projectCard relative flex flex-col text-center bg-white group rounded-lg">
+                    <div class="projectCard relative flex flex-col text-center  group rounded-lg">
                         <h2 class="absolute ml-8 mt-5 md:mt-12 hidden group-hover:block text-white font-roboto text-xl">
                             Project
                             3
                         </h2>
                         <a href="" class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10"><img
                                 src="media/link.png" alt="link" class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/calculator.jpg" alt="Project1"
+                        <img src="media/calculator.jpg" alt="Project3"
                             class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]">
                         <div
                             class="overlay absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
                         </div>
                     </div>
                     <div
-                        class="projectCard relative flex flex-col text-center bg-white group rounded-xl border-4 border-cyan-500">
+                        class="projectCard relative flex flex-col text-center group rounded-xl border-4 border-cyan-500">
                         <h2 class="absolute ml-8 mt-5 md:mt-12 hidden group-hover:block text-white font-roboto text-xl">
                             Project
                             4
                         </h2>
                         <a href="" class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10"><img
                                 src="media/link.png" alt="link" class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/calculator.jpg" alt="Project1"
+                        <img src="media/calculator.jpg" alt="Project4"
                             class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]">
                         <div
                             class="overlay absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
@@ -103,29 +103,71 @@
             </section>
             <!-- Section Skills -->
             <section id="skills" class="hidden">
-                <div class="skillsOuterContainer mt-4 flex flex-wrap justify-center gap-8 font-roboto">
-                    <div class="flex flex-col text-center bg-white w-[250px] group">
-                        <button class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block"
-                            id="sills1">skills1</button>
-                        <img width="250" height="125" src="media/calculator.jpg" alt="skills1"
-                            class="rounded-sm group-hover:bg-black">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
+                <div class="skillsOuterContainer mt-4 flex justify-center gap-8">
+                    <!-- Frontend Skills -->
+                    <div class="frontendSkills flex flex-col gap-4">
+                        <h1 class="font-montserrat mb-4 text-xl  text-center">Frontend Developer</h1>
+                        <div class="grid grid-cols-2 gap-12">
+                            <div class="skillElement font-roboto">
+                                <div class="flex gap-2">
+                                    <img src="media/check.png" alt="skillImage" class="w-8 h-8">
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="font-bold">HTML, CSS</h2>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillElement font-roboto">
+                                <div class="flex gap-2">
+                                    <img src="media/check.png" alt="skillImage" class="w-8 h-8">
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="font-bold">Tailwind CSS</h2>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillElement font-roboto">
+                                <div class="flex gap-2">
+                                    <img src="media/check.png" alt="skillImage" class="w-8 h-8">
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="font-bold">JavaScript</h2>
+                                        <p>Intermediate</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillElement font-roboto">
+                                <div class="flex gap-2">
+                                    <img src="media/check.png" alt="skillImage" class="w-8 h-8">
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="font-bold">React</h2>
+                                        <p>Beginner</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillElement font-roboto">
+                                <div class="flex gap-2">
+                                    <img src="media/check.png" alt="skillImage" class="w-8 h-8">
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="font-bold">TypeScript</h2>
+                                        <p>Beginner</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillElement font-roboto">
+                                <div class="flex gap-2">
+                                    <img src="media/check.png" alt="skillImage" class="w-8 h-8">
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="font-bold">Git</h2>
+                                        <p>Beginner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col text-center bg-white w-[250px] group">
-                        <button class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block"
-                            id="sills1">skills1</button>
-                        <img width="250" height="125" src="media/calculator.jpg" alt="skills1"
-                            class="rounded-sm group-hover:bg-black">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
+                    <div class="backendSkills">
+                        <h1 class="font-montserrat mb-4 text-xl">Backend Developer</h1>
+
                     </div>
-                    <div class="flex flex-col text-center bg-white w-[250px] group">
-                        <button class="absolute ml-40 mt-24 bg-blue-200 w-20 rounded-lg hidden group-hover:block"
-                            id="sills1">skills1</button>
-                        <img width="250" height="125" src="media/calculator.jpg" alt="skills1"
-                            class="rounded-sm group-hover:bg-black">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
-                    </div>
-                </div>
             </section>
         </div>
     </main>
