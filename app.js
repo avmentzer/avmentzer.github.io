@@ -20,8 +20,8 @@ const body = document.querySelector('body')
 const fullName = document.getElementById('fullName')
 
 toggleButton.addEventListener('click', () => {
-    const brightMode = 'container mx-auto mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400'
-    const darkMode = 'container mx-auto mt-10 font-sans bg-gradient-to-r from-slate-900 to-black text-[#0a66c2] dark'
+    const brightMode = 'container mx-auto mt-8 md:mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400'
+    const darkMode = 'container mx-auto mt-8 md:mt-10 font-sans bg-gradient-to-r from-slate-900 to-black text-[#0a66c2] dark'
     if (body.classList.contains('dark')) {
         body.classList = brightMode
         fullName.classList.add('text-slate-700')
