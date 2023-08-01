@@ -1097,6 +1097,14 @@ video {
     width: 12rem;
   }
 
+  .md\:w-44 {
+    width: 11rem;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
   }
