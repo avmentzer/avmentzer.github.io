@@ -703,6 +703,14 @@ video {
   width: 5rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -877,6 +885,16 @@ video {
 
 .to-slate-50 {
   --tw-gradient-to: #f8fafc;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-4 {
@@ -1069,6 +1087,10 @@ video {
     height: 256px;
   }
 
+  .md\:h-56 {
+    height: 14rem;
+  }
+
   .md\:w-60 {
     width: 15rem;
   }
@@ -1079,6 +1101,42 @@ video {
 
   .md\:w-\[512px\] {
     width: 512px;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
+  }
+
+  .md\:w-52 {
+    width: 13rem;
+  }
+
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .md\:w-\[224px\] {
+    width: 224px;
+  }
+
+  .md\:w-\[218px\] {
+    width: 218px;
+  }
+
+  .md\:w-\[216px\] {
+    width: 216px;
+  }
+
+  .md\:w-\[212px\] {
+    width: 212px;
+  }
+
+  .md\:w-\[210px\] {
+    width: 210px;
   }
 
   .md\:gap-12 {
