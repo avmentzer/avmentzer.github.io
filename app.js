@@ -25,7 +25,7 @@ toggleButton.addEventListener('click', () => {
     if (body.classList.contains('dark')) {
         body.classList = brightMode
         fullName.classList.add('text-slate-700')
-        toggleButton.setAttribute('src', 'media/dark.png')
+        toggleButton.setAttribute('src', 'media/dark.webp')
     } else {
         body.classList = darkMode
         fullName.classList.remove('text-slate-700')
