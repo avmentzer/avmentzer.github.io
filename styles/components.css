@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .skill-tag {
+    @apply rounded-full bg-blue-200 px-2.5 py-0.5 text-xs whitespace-nowrap text-blue-700 cursor-pointer transition-all duration-300 hover:bg-blue-300 hover:scale-110 hover:shadow-md;
+  }
+}

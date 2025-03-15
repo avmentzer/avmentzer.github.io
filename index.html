@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="media/favicon-32x32.png">
     <meta name="description" content="Author: Alexander von Menter">
     <link href="dist/output.css" rel="stylesheet">
+    <link href="styles/components.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,268 +40,142 @@
         </div>
     </header>
     <!-- Projects/Skills Section -->
-    <main class="md:h-[100vh]">
-        <div class="mainOuterContainer font-roboto" id="main">
-            <div class="bg-blue-200 w-52 h-22 mx-auto flex place-content-center rounded-2xl mb-12">
-                <button class="bg-blue-400 rounded-md w-24 h-14 m-2 p-4 transition duration-500 ease-in-out"
-                    id="projectButton">Projects</button>
-                <button class="rounded-md w-24 h-14 m-2 p-4 transition duration-300 ease-in-out"
-                    id="skillButton">Skills</button>
-            </div>
-            <!-- Section Projects -->
-            <section id="projects">
-                <div class="projectsOuterContainer mt-4 flex flex-wrap justify-center gap-4 font-montserrat">
-                    <div
-                        class="projectCard relative flex flex-col text-center group rounded-lg  border-4 border-transparent">
-                        <h2 class="absolute ml-8 mt-5 md:mt-4 hidden group-hover:block text-white text-2xl">
-                            Calculator
-                        </h2>
-                        <a href="https://calculator-avm.netlify.app/"
-                            class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10" target="_blank"><img
-                                src="media/link.webp" alt="Link to Calculator"
-                                class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/calculator.webp" alt="Calculator"
-                            class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]" loading="lazy">
-                        <div
-                            class="overlay rounded-lg absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
-                        </div>
+    <main class="min-h-screen flex flex-col">
+        <div class="mainOuterContainer font-roboto flex-1 flex flex-col" id="main">
+            <!-- Section Skills -->
+            <section id="skills" class="flex-1 flex flex-col items-center justify-center">
+                <h2 class="text-4xl font-montserrat font-bold text-gray-800 mb-12 opacity-0">Skills</h2>
+                <div class="skillsOuterContainer mt-4 md:flex justify-center gap-12">
+                    <!-- Web Development Card -->
+                    <div class="grid grid-cols-1 gap-4 md:gap-6 w-[320px] opacity-0 delay-[200ms]">
+                        <article
+                            class="skillCard cursor-pointer hover:animate-background rounded-xl bg-blue-400 p-0.5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                            <div
+                                class="rounded-[10px] bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 h-full flex flex-col cursor-pointer">
+                                <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                </svg>
+                                <h3 class="text-lg font-medium text-gray-900">Web Development</h3>
+                                <p class="mt-2 text-gray-600 flex-grow">Experienced in building responsive and
+                                    interactive
+                                    websites using modern frameworks and best practices.</p>
+                                <div class="mt-auto pt-4 flex flex-wrap gap-1">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">Tailwind CSS</span>
+                                    <span class="skill-tag">Git</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <div
-                        class="projectCard relative flex flex-col text-center group rounded-lg  border-4 border-transparent">
-                        <h2 class="absolute ml-8 mt-5 md:mt-4 hidden group-hover:block text-white text-2xl">
-                            Dictionary List
-                        </h2>
-                        <a href="https://dictionary-z0al.onrender.com"
-                            class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10" target="_blank"><img
-                                src="media/link.webp" alt="Link to Dictionary List"
-                                class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/dictionary.webp" alt="Dictionary List"
-                            class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]" loading="lazy">
-                        <div
-                            class="overlay rounded-lg absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
-                        </div>
+                    <!-- Programming Languages Card -->
+                    <div class="grid grid-cols-1 gap-4 md:gap-6 w-[320px] opacity-0 delay-[400ms]">
+                        <article
+                            class="skillCard cursor-pointer hover:animate-background rounded-xl bg-blue-400 p-0.5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                            <div
+                                class="rounded-[10px] bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 h-full flex flex-col cursor-pointer">
+                                <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 00-2-2H5a2 2 00-2 2v12a2 2 002 2z" />
+                                </svg>
+                                <h3 class="text-lg font-medium text-gray-900">Programming Languages</h3>
+                                <p class="mt-2 text-gray-600 flex-grow">Proficient in multiple programming languages
+                                    with a focus
+                                    on clean and efficient code development.</p>
+                                <div class="mt-auto pt-4 flex flex-wrap gap-1">
+                                    <span class="skill-tag">C#</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <div
-                        class="projectCard relative flex flex-col text-center group rounded-lg border-4 border-transparent">
-                        <h2 class="absolute ml-8 mt-5 md:mt-4 hidden group-hover:block text-white text-2xl">
-                            Country info
-                        </h2>
-                        <a href="https://country-info-avm.netlify.app/"
-                            class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10" target="_blank"><img
-                                src="media/link.webp" alt="Link to Country Info"
-                                class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/world.webp" alt="Country Info"
-                            class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]" loading="lazy">
-                        <div
-                            class="overlay rounded-lg absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
-                        </div>
-                    </div>
-                    <div
-                        class="projectCard relative flex flex-col text-center group rounded-lg  border-4 border-transparent">
-                        <h2 class="absolute ml-8 mt-5 md:mt-4 hidden group-hover:block text-white text-2xl">
-                            Shop Cart
-                        </h2>
-                        <a href="https://shop-cart-avm.netlify.app/"
-                            class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10" target="_blank"><img
-                                src="media/link.webp" alt="Link to Shop Cart"
-                                class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/shop.webp" alt="Shop Cart"
-                            class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]" loading="lazy">
-                        <div
-                            class="overlay rounded-lg absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
-                        </div>
-                    </div>
-                    <div
-                        class="projectCard relative flex flex-col text-center group rounded-xl border-4 border-yellow-400">
-                        <h2 class="absolute ml-8 mt-5 md:mt-4 hidden group-hover:block text-white text-2xl">
-                            Garage.me
-                        </h2>
-                        <a href="https://erin-colorful-jellyfish.cyclic.cloud"
-                            class="absolute ml-8 mt-24 md:mt-44 hidden group-hover:block z-10"><img
-                                src="media/link.webp" alt="Link to Garage.me"
-                                class=" w-12 h-12 rounded-sm brightness-95"></a>
-                        <img src="media/garage.webp" alt="Garage.me"
-                            class="rounded-lg w-[312px] h-[156px] md:w-[512px] md:h-[256px]" loading="lazy">
-                        <div
-                            class="overlay rounded-lg absolute inset-0 bg-gradient-to-t from-black to-slate-50 opacity-0 group-hover:opacity-20 transition-all duration-300">
-                        </div>
+                    <!-- Backend Development Card -->
+                    <div class="grid grid-cols-1 gap-4 md:gap-6 w-[320px] opacity-0 delay-[600ms]">
+                        <article
+                            class="skillCard cursor-pointer hover:animate-background rounded-xl bg-blue-400 p-0.5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                            <div
+                                class="rounded-[10px] bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 h-full flex flex-col cursor-pointer">
+                                <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                                </svg>
+                                <h3 class="text-lg font-medium text-gray-900">Backend Development</h3>
+                                <p class="mt-2 text-gray-600 flex-grow">Skilled in server-side development with modern
+                                    frameworks
+                                    and database management systems.</p>
+                                <div class="mt-auto pt-4 flex flex-wrap gap-1">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Next.js</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">Flask</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
-                <div>
             </section>
-            <!-- Section Skills -->
-            <section id="skills" class="hidden">
-                <div class="skillsOuterContainer mt-4 md:flex justify-center gap-48">
-                    <!-- Frontend Skills -->
-                    <div class="frontendSkills flex flex-col items-center gap-4 mb-8">
-                        <h1 class="font-montserrat mb-4 text-xl text-center">Frontend Developer</h1>
-                        <div class="grid grid-cols-2 gap-4 md:gap-12">
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">HTML, CSS</h2>
-                                        <p>Intermediate</p>
-                                    </div>
+            <!-- Footer -->
+            <footer class="mt-auto mb-2 font-montserrat">
+                <!-- Contact Form -->
+                <div class="flex justify-center mb-10">
+                    <img src="media/email.webp" alt="emailMe" class="contact hover:animate-pulse cursor-pointer">
+                    <dialog
+                        class="contactDialog w-[400px] rounded-xl bg-gradient-to-r from-blue-50 to-blue-100 p-6 shadow-xl border-2 border-blue-400">
+                        <form action="https://formsubmit.co/88ee5835cea3c593b503da9e5321a76b" method="POST"
+                            class="space-y-4">
+                            <div class="flex flex-col font-roboto gap-3">
+                                <h3 class="text-lg font-medium text-gray-900 mb-2">Contact Me</h3>
+                                <div class="space-y-2">
+                                    <label for="name" class="text-gray-700">Name</label>
+                                    <input type="text" name="name"
+                                        class="w-full rounded-lg bg-white/50 p-2 border border-blue-200 focus:border-blue-400 focus:outline-none"
+                                        placeholder="John Doe" required>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="email" class="text-gray-700">Email</label>
+                                    <input type="email" name="email"
+                                        class="w-full rounded-lg bg-white/50 p-2 border border-blue-200 focus:border-blue-400 focus:outline-none"
+                                        placeholder="email@example.com" required>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="message" class="text-gray-700">Message</label>
+                                    <textarea name="message"
+                                        class="w-full rounded-lg bg-white/50 p-2 border border-blue-200 focus:border-blue-400 focus:outline-none h-40"
+                                        placeholder="Your message..." required></textarea>
+                                </div>
+                                <input type="hidden" name="_next" value="https://avmentzer.github.io/email.html">
+                                <div class="flex justify-end gap-3 mt-4">
+                                    <button type="button"
+                                        class="closeDialogButton px-4 py-2 rounded-lg bg-red-100 text-red-700 hover:bg-red-200 transition-colors">
+                                        Close
+                                    </button>
+                                    <button type="submit"
+                                        class="px-4 py-2 rounded-lg bg-blue-400 text-white hover:bg-blue-500 transition-colors">
+                                        Send
+                                    </button>
                                 </div>
                             </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">Tailwind CSS</h2>
-                                        <p>Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">JavaScript</h2>
-                                        <p>Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">React</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">TypeScript</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">Git</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Backend Skills -->
-                    <div class="backendSkills flex flex-col items-center gap-4 mb-8">
-                        <h1 class="font-montserrat mb-4 text-xl text-center">Backend Developer</h1>
-                        <div class="grid grid-cols-2 gap-4 md:gap-12">
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">Node.js</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">Express.js</h2>
-                                        <p>Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">Next.js</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">SQL</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">BaaS</h2>
-                                        <p>Intermediate</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">C#</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">Python</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skillElement font-roboto">
-                                <div class="flex gap-2">
-                                    <img src="media/check.webp" alt="skillImage" class="w-8 h-8">
-                                    <div class="flex flex-col gap-2">
-                                        <h2 class="font-bold">Flask</h2>
-                                        <p>Beginner</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
+                        </form>
+                    </dialog>
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                    <p class="text-center">&copy Alexander von Mentzer</p>
+                    <a href="#headerContainer"
+                        class="back-to-top fixed bottom-8 right-8 bg-blue-400 hover:bg-blue-500 text-white rounded-full p-3 transition-all duration-300 hover:scale-110 shadow-lg hidden">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
         </div>
     </main>
-    <footer class="mb-2 font-montserrat">
-        <!-- Contact Form -->
-        <div class="flex justify-center mb-10">
-            <img src="media/email.webp" alt="emailMe" class="contact hover:animate-pulse cursor-pointer">
-            <dialog class="contactDialog w-[400px]">
-                <form action="https://formsubmit.co/88ee5835cea3c593b503da9e5321a76b" method="POST">
-                    <div class="flex flex-col font-roboto gap-1">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" class="bg-blue-100 h-8 animation-cursot" placeholder="John Doe"
-                            required>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="bg-blue-100 h-8" placeholder="email@example.com"
-                            required>
-                        <label for="message">Your message</label>
-                        <textarea name="message" maxlength="1000" minlength="1" class="bg-blue-100 h-40"
-                            placeholder="Text..." required></textarea>
-                        <input type="hidden" name="_next" value="https://avmentzer.github.io/email.html">
-                        <div class="flex justify-between mt-4">
-                            <button type="submit" class="bg-green-200 rounded-xl w-20">Send</button>
-                            <button type="button" class="closeDialogButton bg-red-200 rounded-xl w-20">Close</button>
-                        </div>
-                    </div>
-                </form>
-            </dialog>
-        </div>
-        <p class="text-center">&copy Alexander von Mentzer</p>
-    </footer>
+    <script src="app.js"></script>
+
 </body>
-<script src="app.js"></script>
 
 </html>
