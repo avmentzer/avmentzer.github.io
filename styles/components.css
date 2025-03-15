@@ -6,4 +6,24 @@
   .skill-tag {
     @apply rounded-full bg-blue-200 px-2.5 py-0.5 text-xs whitespace-nowrap text-blue-700 cursor-pointer transition-all duration-300 hover:bg-blue-300 hover:scale-110 hover:shadow-md;
   }
+
+  .section-title {
+    @apply text-4xl font-montserrat font-bold mb-6 text-center;
+  }
+
+  .section-description {
+    @apply text-lg font-roboto max-w-3xl mx-auto text-center mb-12;
+  }
+
+  .card-title {
+    @apply font-medium font-montserrat;
+  }
+
+  .card-text {
+    @apply text-sm font-roboto mt-1;
+  }
+
+  .power-platform-tag {
+    @apply rounded-full bg-[#742774]/10 px-2.5 py-0.5 text-xs text-[#742774] hover:bg-[#742774]/20 transition-colors whitespace-nowrap;
+  }
 }

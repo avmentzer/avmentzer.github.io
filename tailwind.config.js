@@ -58,10 +58,27 @@ module.exports = {
         '200': '200ms',
         '400': '400ms',
         '600': '600ms',
-      }
+      },
+      clipPath: {
+        'diagonal': 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
+      },
+      colors: {
+        'power-primary': '#742774',
+        'power-secondary': '#464EB8',
+      },
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.clip-diagonal': {
+          clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
   corePlugins: {
     // ...existing core plugins...
   },
