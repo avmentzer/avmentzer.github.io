@@ -22,21 +22,28 @@
     class="container mx-auto mt-8 md:mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400">
     <!-- Hero Section -->
     <header id="headerContainer">
-        <div class="flex flex-col text-center items-center gap-8 mb-28 font-montserrat md:h-[100vh]">
-            <div>
-                <img src=" media/dark.webp" width="32" height="32" alt="toggleDarkMode"
+        <div class="flex flex-col text-center items-center gap-4 mb-16 font-montserrat min-h-screen">
+            <div class="mt-8">
+                <img src="media/dark.webp" width="32" height="32" alt="toggleDarkMode"
                     class="cursor-pointer absolute ml-[200px] bg-transparent md:ml-[450px] hover:cursor-pointer"
                     id="toggleDarkMode">
-                <img src="media/IMG_6948.webp" alt="headshot" class="w-20 h-32 md:w-32 md:h-48 rounded-full mb-8">
+                <img src="media/IMG_6948.webp" alt="headshot" class="w-16 h-28 md:w-24 md:h-36 rounded-full mb-4">
             </div>
-            <h1 class="text-2xl md:text-3xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
-            <h2 class="text-2xl md:text-2xl text-[#0a66c2] hover:font-code">I'm a passionate coder.</h2>
-            <p class="w-[360px] h-24 md:h-24 font-roboto text-md" id="headline"></p>
-            <img src="media/cloud.webp" alt="wordCloud" class="w-80 h-40 md:w-[400px] md:h-64">
-            <a href="https://www.linkedin.com/in/avmentzer" target="_blank"><img width="72" height="72"
-                    src="media/linkedin-svgrepo-com.svg" alt="linkedin" class="md:mb-0 hover:drop-shadow-xl "></a>
-            <img src="media/down-arrow.webp" alt="ProjectsSkillsSection" width="48" height="48"
-                class="animate-bounce mt-4 hidden md:block"></img>
+            <h1 class="text-xl md:text-2xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
+            <h2 class="text-xl md:text-2xl text-[#0a66c2] hover:font-code">I'm a passionate coder.</h2>
+            <!-- Fixed height for headline -->
+            <p class="w-[320px] md:w-[360px] h-12 md:h-20 font-roboto text-xs md:text-sm overflow-y-auto" id="headline">
+            </p>
+            <img src="media/cloud.webp" alt="wordCloud" class="w-72 h-32 md:w-[360px] md:h-48">
+            <a href="https://www.linkedin.com/in/avmentzer" target="_blank">
+                <img width="56" height="56" src="media/linkedin-svgrepo-com.svg" alt="linkedin"
+                    class="md:mb-0 hover:drop-shadow-xl">
+            </a>
+            <!-- Down arrow positioned at bottom of viewport -->
+            <div class="flex-1 flex items-end justify-center pb-8">
+                <img src="media/down-arrow.webp" alt="ProjectsSkillsSection" width="36" height="36"
+                    class="animate-bounce absolute bottom-4">
+            </div>
         </div>
     </header>
 
@@ -44,7 +51,7 @@
     <main class="min-h-screen flex flex-col">
         <!-- <div class="mainOuterContainer font-roboto flex-1 flex flex-col" id="main"></div> -->
         <!-- Power Platform Section -->
-        <section class="mb-16 px-4">
+        <section class="mb-16 px-4 mt-8">
             <h2 class="section-title text-[#742774] opacity-0">Empowering Businesses with MS Power Apps</h2>
             <p class="section-description text-[#742774]/80 opacity-0">
                 I create solutions that make work easier. Using Microsoft Power Platform,
@@ -173,7 +180,7 @@
                                 <div class="text-[#742774] bg-transparent shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 4h18M5 8h14a2 2 0 002-2V4a2 2 00-2-2H5a2 2 00-2 2v2a2 2 0 002 2zm0 12h14a2 2 0 002-2v-2a2 2 00-2-2H5a2 2 00-2 2v2a2 2 002 2z" />
+                                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 4h18M5 8h14a2 2 0 002-2V4a2 2 00-2-2H5a2 2 00-2 2v2a2 2 00-2 2zm0 12h14a2 2 0 002-2v-2a2 2 00-2-2H5a2 2 00-2 2v2a2 2 002 2z" />
                                     </svg>
                                 </div>
                                 <div>
@@ -208,7 +215,7 @@
                             <!-- Updated Web Development icon -->
                             <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z M9 11l3 3m0 0l3-3m-3 3V8" />
+                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 00-2-2h-6l-2-2H5a2 2 00-2 2z M9 11l3 3m0 0l3-3m-3 3V8" />
                             </svg>
                             <h3 class="text-lg font-medium text-gray-900">Web Development</h3>
                             <p class="mt-2 text-gray-600 flex-grow">Experienced in building responsive and
@@ -234,7 +241,7 @@
                             <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 00-2-2H5a2 2 00-2 2v12a2 2 00-2 2z" />
                             </svg>
                             <h3 class="text-lg font-medium text-gray-900">Programming Languages</h3>
                             <p class="mt-2 text-gray-600 flex-grow">Proficient in multiple programming languages
@@ -258,7 +265,7 @@
                             class="rounded-[10px] bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 h-full flex flex-col cursor-pointer">
                             <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 00-2 2h14a2 2 00-2-2v-4a2 2 00-2-2m-2-4h.01M17 16h.01" />
                             </svg>
                             <h3 class="text-lg font-medium text-gray-900">Backend Development</h3>
                             <p class="mt-2 text-gray-600 flex-grow">Skilled in server-side development with modern
