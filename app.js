@@ -256,6 +256,14 @@ toggleButton.addEventListener('click', () => {
             });
         });
 
+        // Contact section
+        const contactTitle = document.querySelector('footer h2');
+        const contactText = document.querySelector('footer h2 + p');
+        contactTitle.classList.remove('text-white');
+        contactTitle.classList.add('text-gray-800');
+        contactText.classList.remove('text-gray-400');
+        contactText.classList.add('text-gray-600');
+
         // Dialog
         const dialog = document.querySelector('.contactDialog');
         dialog.classList.remove('bg-gray-900', 'border-gray-700');
@@ -301,6 +309,14 @@ toggleButton.addEventListener('click', () => {
                 span.classList.add('bg-blue-600', 'text-blue-100');
             });
         });
+
+        // Contact section
+        const contactTitle = document.querySelector('footer h2');
+        const contactText = document.querySelector('footer h2 + p');
+        contactTitle.classList.remove('text-gray-800');
+        contactTitle.classList.add('text-white');
+        contactText.classList.remove('text-gray-600');
+        contactText.classList.add('text-gray-400');
 
         // Dialog
         const dialog = document.querySelector('.contactDialog');
