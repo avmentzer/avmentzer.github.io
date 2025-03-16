@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Set bright mode automatically on load
-    const brightMode = 'container mx-auto mt-8 md:mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400';
+    const brightMode = 'container mx-auto mt-4 md:mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400';
     body.classList = brightMode;
     fullName.classList.add('text-slate-700');
     toggleButton.setAttribute('src', 'media/dark.webp');
@@ -122,15 +122,15 @@ document.addEventListener('DOMContentLoaded', () => {
     backToTopButton.addEventListener('click', (e) => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        body.classList.add('mt-8', 'md:mt-10');
+        body.classList.add('mt-4', 'md:mt-10');
     });
 
     // Remove margin when scrolling down
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            body.classList.remove('mt-8', 'md:mt-10');
+            body.classList.remove('mt-4', 'md:mt-10');
         } else {
-            body.classList.add('mt-8', 'md:mt-10');
+            body.classList.add('mt-4', 'md:mt-10');
         }
     });
 });
@@ -219,8 +219,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Toggle button handler
 toggleButton.addEventListener('click', () => {
-    const brightMode = 'container mx-auto mt-8 md:mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400';
-    const darkMode = 'container mx-auto mt-8 md:mt-10 font-sans bg-gradient-to-r from-slate-900 to-black text-[#0a66c2] dark';
+    const brightMode = 'container mx-auto mt-4 md:mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400';
+    const darkMode = 'container mx-auto mt-4 md:mt-10 font-sans bg-gradient-to-r from-slate-900 to-black text-[#0a66c2] dark';
 
     if (body.classList.contains('dark')) {
         // Switch to bright mode
