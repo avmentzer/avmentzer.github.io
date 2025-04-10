@@ -21,34 +21,33 @@
 <body
     class="container mx-auto mt-4 md:mt-10 font-sans bg-gradient-to-r from-blue-50 to-blue-100 md:from-white md:to-blue-400">
     <!-- Hero Section -->
-    <header id="headerContainer">
-        <div class="flex flex-col text-center items-center gap-4 mb-16 font-montserrat min-h-screen">
-            <div class="mt-8">
-                <img src="media/dark.webp" width="32" height="32" alt="toggleDarkMode"
-                    class="cursor-pointer absolute ml-[200px] bg-transparent md:ml-[450px] hover:cursor-pointer"
-                    id="toggleDarkMode">
+    <header id="headerContainer" class="relative">
+        <!-- Remove md:min-h-0, add justify-center, remove py-6 md:py-16 -->
+        <div class="flex flex-col text-center items-center justify-center gap-2 md:gap-4 font-montserrat min-h-screen">
+            <img src="media/dark.webp" width="32" height="32" alt="toggleDarkMode"
+                class="cursor-pointer absolute top-4 right-4 md:top-6 md:right-6 bg-transparent hover:cursor-pointer"
+                id="toggleDarkMode">
+            <!-- Remove mt-4 md:mt-8 -->
+            <div>
                 <img src="media/IMG_6948.webp" alt="headshot" class="w-16 h-28 md:w-24 md:h-36 rounded-full mb-4">
             </div>
             <h1 class="text-xl md:text-2xl text-slate-700" id="fullName">Alexander von Mentzer</h1>
             <h2 class="text-xl md:text-2xl text-[#0a66c2] hover:font-code">I'm a passionate coder.</h2>
-            <!-- Fixed height for headline -->
-            <p class="w-[320px] md:w-[360px] h-12 md:h-20 font-roboto text-xs md:text-sm overflow-y-auto" id="headline">
+            <p class="max-w-sm md:max-w-md font-roboto text-xs md:text-sm overflow-y-auto h-24 md:h-20" id="headline">
             </p>
-            <img src="media/cloud2.webp" alt="wordCloud" class="w-72 h-32 md:w-[360px] md:h-48">
+            <img src="media/cloud2.webp" alt="wordCloud" class="max-w-xs h-auto md:max-w-sm">
             <a href="https://www.linkedin.com/in/avmentzer" target="_blank">
                 <img width="56" height="56" src="media/linkedin-svgrepo-com.svg" alt="linkedin"
                     class="md:mb-0 hover:drop-shadow-xl">
             </a>
-            <!-- Down arrow positioned at bottom of viewport -->
-            <div class="flex-1 flex items-end justify-center pb-8">
-                <img src="media/down-arrow.webp" alt="ProjectsSkillsSection" width="36" height="36"
-                    class="animate-bounce absolute bottom-4">
-            </div>
+            <!-- Add absolute bottom-8, remove md:relative md:bottom-auto, remove mt-8 md:mt-12 -->
+            <img src="media/down-arrow.webp" alt="ProjectsSkillsSection" width="36" height="36"
+                class="animate-bounce absolute bottom-8">
         </div>
     </header>
 
     <!-- Skills/PowerPlatform Section -->
-    <main class="min-h-screen flex flex-col">
+    <main class="flex flex-col"> <!-- Remove min-h-screen from main -->
         <!-- <div class="mainOuterContainer font-roboto flex-1 flex flex-col" id="main"></div> -->
         <!-- Power Platform Section -->
         <section class="mb-16 px-4 mt-8">
@@ -180,7 +179,7 @@
                                 <div class="text-[#742774] bg-transparent shrink-0">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 4h18M5 8h14a2 2 0 002-2V4a2 2 00-2-2H5a2 2 00-2 2v2a2 2 00-2 2zm0 12h14a2 2 0 002-2v-2a2 2 00-2-2H5a2 2 00-2 2v2a2 2 002 2z" />
+                                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 4h18M5 8h14a2 2 00-002-2V4a2 2 00-2-2H5a2 2 00-2 2v2a2 2 00-2 2zm0 12h14a2 2 00-002-2v-2a2 2 00-2-2H5a2 2 00-2 2v2a2 2 002 2z" />
                                     </svg>
                                 </div>
                                 <div>
@@ -203,29 +202,36 @@
         </section>
         <!-- Section Skills -->
         <section id="skills" class="flex-1 flex flex-col items-center justify-start">
-            <h2 class="text-4xl font-montserrat font-bold text-gray-800 mb-12 opacity-0">Skills</h2>
-            <!-- Updated container with mobile spacing -->
+            <!-- Remove dark:text-blue-300 -->
+            <h2 class="text-4xl font-montserrat font-bold text-black mb-12 opacity-0">Skills</h2>
             <div class="skillsOuterContainer mt-4 lg:flex justify-center grid grid-cols-1 gap-8">
                 <!-- Web Development Card -->
                 <div class="grid grid-cols-1 gap-4 md:gap-6 w-[320px] opacity-0 delay-[200ms]">
+                    <!-- Remove dark:bg-blue-700 -->
                     <article
                         class="skillCard cursor-pointer hover:animate-background rounded-xl bg-blue-400 p-0.5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <!-- Remove dark:bg-gray-900 -->
                         <div
                             class="rounded-[10px] bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 h-full flex flex-col cursor-pointer">
-                            <!-- Updated Web Development icon -->
-                            <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 00-2-2h-6l-2-2H5a2 2 00-2 2z M9 11l3 3m0 0l3-3m-3 3V8" />
+                            <!-- Replace SVG for Web Development -->
+                            <svg class="w-8 h-8 mb-2 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
                             </svg>
+                            <!-- Remove dark:text-blue-300 -->
                             <h3 class="text-lg font-medium text-gray-900">Web Development</h3>
-                            <p class="mt-2 text-gray-600 flex-grow">Experienced in building responsive and
+                            <!-- Remove dark:text-white -->
+                            <p class="mt-2 text-gray-600 flex-grow">Experienced in building
+                                responsive and
                                 interactive
                                 websites using modern frameworks and best practices.</p>
                             <div class="mt-auto pt-4 flex flex-wrap gap-1">
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">Tailwind CSS</span>
-                                <span class="skill-tag">Git</span>
+                                <!-- Add px-3 py-1 text-xs rounded-full -->
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">React</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">TypeScript</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">Tailwind</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">Git</span>
                             </div>
                         </div>
                     </article>
@@ -233,25 +239,28 @@
 
                 <!-- Programming Languages Card -->
                 <div class="grid grid-cols-1 gap-4 md:gap-6 w-[320px] opacity-0 delay-[400ms]">
+                    <!-- Remove dark:bg-blue-700 -->
                     <article
                         class="skillCard cursor-pointer hover:animate-background rounded-xl bg-blue-400 p-0.5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <!-- Remove dark:bg-gray-900 -->
                         <div
                             class="rounded-[10px] bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 h-full flex flex-col cursor-pointer">
-                            <!-- Fixed Programming icon -->
-                            <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 00-2-2H5a2 2 00-2 2v12a2 2 00-2 2z" />
+                            <!-- Replace SVG path data for Programming Languages (Cube) -->
+                            <svg class="w-8 h-8 mb-2 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
                             </svg>
                             <h3 class="text-lg font-medium text-gray-900">Programming Languages</h3>
-                            <p class="mt-2 text-gray-600 flex-grow">Proficient in multiple programming languages
+                            <p class="mt-2 text-gray-600 flex-grow">Proficient in multiple
+                                programming languages
                                 with a focus
                                 on clean and efficient code development.</p>
                             <div class="mt-auto pt-4 flex flex-wrap gap-1">
-                                <span class="skill-tag">C#</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">C#</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">Python</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">JavaScript</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">TypeScript</span>
                             </div>
                         </div>
                     </article>
@@ -259,23 +268,31 @@
 
                 <!-- Backend Development Card -->
                 <div class="grid grid-cols-1 gap-4 md:gap-6 w-[320px] opacity-0 delay-[600ms]">
+                    <!-- Remove dark:bg-blue-700 -->
                     <article
                         class="skillCard cursor-pointer hover:animate-background rounded-xl bg-blue-400 p-0.5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <!-- Remove dark:bg-gray-900 -->
                         <div
                             class="rounded-[10px] bg-gradient-to-r from-blue-50 to-blue-100 p-4 sm:p-6 h-full flex flex-col cursor-pointer">
-                            <svg class="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 00-2 2h14a2 2 00-2-2v-4a2 2 00-2-2m-2-4h.01M17 16h.01" />
+                            <!-- Replace SVG for Backend Development -->
+                            <svg class="w-8 h-8 mb-2 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5-3.75l-8.25 4.125-8.25-4.125" />
                             </svg>
+                            <!-- Remove dark:text-blue-300 -->
                             <h3 class="text-lg font-medium text-gray-900">Backend Development</h3>
-                            <p class="mt-2 text-gray-600 flex-grow">Skilled in server-side development with modern
+                            <!-- Remove dark:text-white -->
+                            <p class="mt-2 text-gray-600 flex-grow">Skilled in server-side
+                                development with modern
                                 frameworks
                                 and database management systems.</p>
                             <div class="mt-auto pt-4 flex flex-wrap gap-1">
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Next.js</span>
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">Flask</span>
+                                <!-- Add px-3 py-1 text-xs rounded-full -->
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">Node.js</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">Next.js</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">SQL</span>
+                                <span class="skill-tag px-3 py-1 text-xs rounded-full">Flask</span>
                             </div>
                         </div>
                     </article>
@@ -289,8 +306,10 @@
         <!-- Contact Form -->
         <div class="flex flex-col items-center mb-10"></div>
         <div class="text-center mb-6">
-            <h2 class="text-4xl font-montserrat font-bold text-gray-800 mb-4">Get in Touch</h2>
-            <p class="text-gray-600 mb-2">Have a question? Just drop me a message!</p>
+            <!-- Remove dark:text-blue-300 -->
+            <h2 class="text-4xl font-montserrat font-bold text-black mb-4">Get in Touch</h2>
+            <!-- Remove dark:text-gray-400 -->
+            <p class="text-black mb-2">Have a question? Just drop me a message!</p>
             <div class="flex justify-center">
                 <img src="media/email.webp" alt="emailMe" class="contact hover:animate-pulse cursor-pointer">
             </div>
